@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makeup Stop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="makeup-wrapper">
+        <div class="makeup-search">
+          <h2 class="title">Find  Your Makeup Products</h2>
+          <div>
+            If Makeup Give You Confidents ,Why Not?<br />
+            <cite>- Pat Conroy</cite>
+          </div>
+          <div class="makeup-search-box">
+            <select class="search-control" id="search-input">
+              <option value="Select A Category" disabled selected>
+                Select A Category
+              </option>
+              <option value="blush">Blush</option>
+              <option value="bronzer">Bronzer</option>
+              <option value="eyebrow">Eyebrow</option>
+              <option value="eyeliner">Eyeliner</option>
+              <option value="eyeshadow">Eyeshadow</option>
+              <option value="foundation">Foundation</option>
+              <option value="lip_liner">Lip liner</option>
+              <option value="lipstick">Lipstick</option>
+              <option value="mascara">Mascara</option>
+              <option value="nail_polish">Nail polish</option>
+            </select>
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="makeup-result">
+          <h2 class="title">Your Search Results:</h2>
+          <div id="makeup"></div>
+        </div>
+
+        <div class="makeup-details">
+          <button
+            type="button"
+            class="btn product-close-btn"
+            id="product-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <div class="makeup-details-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
