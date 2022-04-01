@@ -84,7 +84,7 @@ async function getMakeupList() {
   let searchInputTxt = document.getElementById("search-input-type").value;
   try {
     let response = await fetch(
-      `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchInputTxt}`
+      `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${searchInputTxt}`
     );
     let data = await response.json();
 
