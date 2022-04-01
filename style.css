@@ -22,25 +22,43 @@ body {
   opacity: 0.8;
 }
 .title {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 16px;
+  color: #8f0a1c;
 }
 
 .container {
   min-height: 100vh;
+  background: rgb(255, 230, 230);
+
 }
 .makeup-wrapper {
   max-width: 1280px;
   margin: 0 auto;
   padding: 32px;
-  background: #fff;
+  background: rgb(255, 230, 230);
   text-align: center;
+  
+
 }
 .makeup-search {
   margin: 32px 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(252, 177, 177,0),rgb(252, 177, 177,0.5)),url(source.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 8px;
 }
 .makeup-search cite {
   font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+.makeup-search div {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
 }
 .makeup-search-box {
   margin: 20px 0;
@@ -55,25 +73,26 @@ body {
   padding: 0 16px;
   font-size: 18px;
   outline: 0;
-  border: 1px solid #8f0a1c;;
-  color: #8f0a1c;;
+  border: 1px solid #8f0a1c;
+  color: #8f0a1c;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
 .search-control::placeholder {
-  color: #8f0a1c;;
+  color: #8f0a1c;
 }
 .search-btn {
   width: 55px;
   height: 55px;
   font-size: 28px;
-  background: #8f0a1c;;
+  background: #8f0a1c;
   color: #fff;
   border: none;
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
   transition: all 0.4s linear;
 }
+
 .search-btn:hover {
   background: #c40a23;
 }
@@ -85,67 +104,61 @@ body {
 }
 .makeup-item {
   border-radius: 16px;
+  background:#fff;
 
   overflow: hidden;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
   margin: 32px 0;
+  transition: 0.5s;
 }
+.makeup-item:hover{
+  transform:scale(1.05);
+  box-shadow: 0 12px 36px -18px rgba(0, 0, 0, 1);
+  background-color: rgb(255, 201, 201)
+}
+
 .makeup-img img {
   width: 100%;
   display: block;
+  height: 300px;
 }
 .makeup-name {
   padding: 24px 8px;
+  overflow-y: scroll;
+  height: 310px;
+}
+.makeup-name::-webkit-scrollbar {
+  width: 10px;
+}
+.makeup-name::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
+  border-radius: 32px;
 }
 .makeup-name h3 {
   font-size: 22px;
 }
 .product-btn {
   text-decoration: none;
-  color: #fff;
-  background: #8f0a1c;;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
   font-weight: 500;
   font-size: 18px;
   padding: 12px 0;
   display: block;
   width: 175px;
   margin: 16px auto;
-  border-radius: 32px;
-
+  border: 2px solid #8f0a1c;
+  cursor: pointer;
+  position: relative;
   transition: all 0.4s linear;
 }
 .product-btn:hover {
-  background: #c40a23;
-}
-.product-drop{
-    display: none;
-}
-/* .product-btn:hover .product-drop {
-  /* background: #c40a23; */
-  /* display:inline-block;
-} */ */
-
-/* meal details */
-.makeup-details {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  color: #fff;
-  background: #8f0a1c;;
-  border-radius: 16px;
-
-  width: 90%;
-  height: 90%;
-  overflow-y: scroll;
-  display: none;
-  padding: 32px 0;
+  color: #ffffff;
+  background: #8f0a1c;
 }
 
 
 /* js related */
-
 
 .makeup-details-content {
   margin: 32px;
@@ -161,7 +174,7 @@ body {
 .product-category {
   background: #fff;
   font-weight: 600;
-  color: #8f0a1c;;
+  color: #8f0a1c;
   display: inline-block;
   padding: 3px 8px;
   border-radius: 5px;
@@ -181,14 +194,29 @@ body {
   margin: 22px 0;
 }
 .product-link a {
-  color: rgb(27, 26, 26);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 700;
   transition: all 0.4s linear;
+  text-decoration:none ;
 }
-.product-link a:hover {
-  opacity: 0.8;
+
+.product-link a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #8f0a1c;
+  display: block;
+margin:auto;
+transition: 0.5s;
 }
+.product-link a:hover::after {
+  width: 100%;
+}
+option:checked, option:hover {
+      background-color: #8f0a1c;
+      color:white ;
+    }
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
@@ -218,5 +246,3 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
-
