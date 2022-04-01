@@ -50,6 +50,7 @@ body {
     background-size: cover;
     position: relative;
     padding-bottom: 8px;
+    border-radius:8px;
 }
 
 /* ------quote------ */
@@ -90,8 +91,8 @@ select::-webkit-scrollbar-thumb {
   outline: 0;
   border: 1px solid #8f0a1c;
   color: #8f0a1c;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .search-control::placeholder {
   color: #8f0a1c;
@@ -103,8 +104,8 @@ select::-webkit-scrollbar-thumb {
   background: #8f0a1c;
   color: #fff;
   border: none;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   transition: all 0.4s linear;
 }
 
@@ -120,7 +121,7 @@ select::-webkit-scrollbar-thumb {
   margin: 40px 0;
 }
 .makeup-item {
-  border-radius: 16px;
+  border-radius: 8px;
   background:#fff;
 
   overflow: hidden;
@@ -168,6 +169,7 @@ select::-webkit-scrollbar-thumb {
   cursor: pointer;
   position: relative;
   transition: all 0.4s linear;
+  border-radius:5px
 }
 .product-btn:hover {
   color: #ffffff;

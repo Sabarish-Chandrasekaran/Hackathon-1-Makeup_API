@@ -103,7 +103,7 @@ async function getMakeupList() {
                         <h3 style="color:#8f0a1c;">$${makeup.price}</h3>
                         <div id=${
                           makeup.id
-                        } class="product-btn" onclick="show(this.id)")>More</div>
+                        } class="product-btn" onclick="show(this.id)")>Know More</div>
                         <div id=${
                           makeup.id + 10000000000
                         }   style="display:none">
